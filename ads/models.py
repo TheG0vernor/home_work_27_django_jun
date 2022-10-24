@@ -12,4 +12,4 @@ class Ads(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=25)
+    name = models.CharField(max_length=25, unique=True)
